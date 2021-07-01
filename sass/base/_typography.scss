@@ -5,11 +5,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
 // LOGO & TITLE
-h1, h2, h3 {
+h1, .footer__container__logo {
     font-family: 'Shrikhand', cursive;
+    font-size: 32px;
 }
 
 // TEXT
-p {
+h2, h3, p, a, li {
     font-family: 'Roboto', sans-serif;
+}
+
+p, span {
+    font-size: 17px;
 }

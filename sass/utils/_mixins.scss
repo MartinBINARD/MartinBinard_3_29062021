@@ -1,0 +1,19 @@
+@mixin button {
+    color: $color-fonts-button;
+    font-size: 17px;
+    border: inherit;
+    border-radius: 500px;
+    background: linear-gradient(to top, $color-primary , $color-secondary);
+    padding: 1rem 1.2rem;
+    cursor: pointer;
+}
+
+@mixin selector__number--style {
+    color: $color-fonts-button;
+    background-color: $color-primary;
+    border-radius: 500px;
+    height: 25px;
+    width: 25px;
+    padding-top: 3px;
+    text-align: center;
+}

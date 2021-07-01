@@ -1,0 +1,33 @@
+.navbar {
+    padding: 50px 20px 68px;
+}
+
+.navbar__container__list {
+    margin-top: 27px;
+    border: solid black 1px;
+}
+
+.navbar__container__list__selector {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: $color-background-explore;
+    position: relative;
+    left: 12px;
+    margin: 20px 0;
+    padding: 25px 0 25px 25px;
+    border-radius: 20px;
+    width: 96.5%;
+    cursor: pointer;
+}
+
+.navbar__container__list__selector i {
+    margin-right: 27px;
+    color: $color-icons-list;
+    margin-left: 12px;
+}
+.selector__number {
+    @include selector__number--style;
+    position: absolute;
+    left: -12px;
+}

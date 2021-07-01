@@ -3,7 +3,7 @@
 
 ***A cool french menu reservation website called Ohmyfood***
 
-**Commit #3**
+**Commit #4**
 
 # Description
 
@@ -19,6 +19,7 @@
 
 # Change done
 
-* Add index.html structure page
-* Add public,css & pages directories
-* Add _reset.scss & _typography.scss
+* Add nav select restaurant / menu
+* Add title h1 & semantic tags
+* Add _index.scss
+* Add _variables.scss _mixins.scss & _placeholders.scss
