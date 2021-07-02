@@ -3,7 +3,7 @@
 
 ***A cool french menu reservation website called Ohmyfood***
 
-**Commit #4**
+**Commit #5**
 
 # Description
 
@@ -19,7 +19,4 @@
 
 # Change done
 
-* Add nav select restaurant / menu
-* Add title h1 & semantic tags
-* Add _index.scss
-* Add _variables.scss _mixins.scss & _placeholders.scss
+* Add css grid to restaurant selection and img of palette du gout

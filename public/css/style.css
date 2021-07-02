@@ -61,11 +61,14 @@ h1 {
   background-color: #f6f6f6;
   position: relative;
   left: 12px;
-  margin: 20px 0;
   padding: 25px 0 25px 25px;
   border-radius: 20px;
   width: 96.5%;
   cursor: pointer;
+}
+
+#select-menu {
+  margin: 20px 0;
 }
 
 .navbar__container__list__selector i {
@@ -122,6 +125,23 @@ h1 {
   background: linear-gradient(to top, #9356DC, #FF79DA);
   padding: 1rem 1.2rem;
   cursor: pointer;
+}
+
+.restaurant {
+  background-color: #f6f6f6;
+  padding: 20px;
+}
+
+.restaurant h2 {
+  margin-top: 38px;
+}
+
+.restaurant__container {
+  display: grid;
+  margin: 20px 0 24px 0;
+  grid-template-columns: 1fr;
+  grid-template-rows: 4fr;
+  gap: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */

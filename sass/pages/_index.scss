@@ -32,3 +32,21 @@
 .search-rest__explore__button {
     @include button;
 }
+
+// RESTAURANT SELECTION
+.restaurant {
+    background-color: $color-background-explore;
+    padding: 20px;
+}
+
+.restaurant h2 {
+    margin-top: 38px;
+}
+
+.restaurant__container {
+    display: grid;
+    margin: 20px 0 24px 0;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr;
+    gap: 18px;
+}
