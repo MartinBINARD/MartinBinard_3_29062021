@@ -3,7 +3,7 @@
 
 ***A cool french menu reservation website called Ohmyfood***
 
-**Commit #7**
+**Commit #8**
 
 # Description
 
@@ -19,7 +19,7 @@
 
 # Change done
 
-* Move index.html to public
+* Move index.html to root
 
 # WEBSITE LINK
 
