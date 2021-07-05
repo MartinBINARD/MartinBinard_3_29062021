@@ -3,7 +3,7 @@
 
 ***A cool french menu reservation website called Ohmyfood***
 
-**Commit #6**
+**Commit #7**
 
 # Description
 
@@ -19,6 +19,8 @@
 
 # Change done
 
-* Add max width to restaurant cards img
-* Add Footer
-* Add _grid.scss & _responsive.scss
+* Move index.html to public
+
+# WEBSITE LINK
+
+[ohmyfood](https://martinbinard.github.io/MartinBinard_3_29062021/)
