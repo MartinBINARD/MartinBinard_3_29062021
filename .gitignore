@@ -1,3 +1,4 @@
 *.tmp
 style.cs.map
 style.css.map
+.vscode

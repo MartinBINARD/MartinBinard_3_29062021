@@ -4,10 +4,19 @@
 // SHRIKHAND
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 
-// LOGO & TITLE
-h1, .footer__container__logo {
+// HEAD & FOOTER LOGO / TITLE
+h1, h4 {
     font-family: 'Shrikhand', cursive;
+}
+
+// HEAD LOGO 
+h1 {
     font-size: 32px;
+}
+
+// FOOTER LOGO
+h4 {
+    font-size: 18px;
 }
 
 // TEXT
@@ -17,4 +26,13 @@ h2, h3, p, a, li {
 
 p, span {
     font-size: 17px;
+}
+
+.new-sticker {
+    font-size: 14px;
+}
+
+// HEART BOTTOM CARD
+.card__bottom__heart i {
+    font-size: 21px;
 }

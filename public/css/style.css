@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-header {
+.card, header {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.navbar__container__list__selector {
+  box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* HTML formating */
@@ -23,9 +27,16 @@ img {
   object-fit: cover;
 }
 
-h1, .footer__container__logo {
+h1, h4 {
   font-family: "Shrikhand", cursive;
+}
+
+h1 {
   font-size: 32px;
+}
+
+h4 {
+  font-size: 18px;
 }
 
 h2, h3, p, a, li {
@@ -34,6 +45,28 @@ h2, h3, p, a, li {
 
 p, span {
   font-size: 17px;
+}
+
+.new-sticker {
+  font-size: 14px;
+}
+
+.card__bottom__heart i {
+  font-size: 21px;
+}
+
+@media screen and (min-width: 1024px) {
+  .restaurant__container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+.restaurant__container {
+  display: grid;
+  margin: 20px 0 24px 0;
+  grid-template-columns: 100%;
+  grid-template-rows: 4fr;
+  gap: 18px;
 }
 
 header {
@@ -89,6 +122,40 @@ h1 {
   left: -12px;
 }
 
+footer, footer a {
+  background-color: #353535;
+  color: #ffffff;
+}
+
+footer {
+  padding: 25px;
+}
+
+footer li {
+  margin: 0.63rem 0;
+}
+
+footer a:hover {
+  color: #9356DC;
+}
+
+footer i {
+  display: inline;
+}
+
+footer p {
+  display: inline-block;
+}
+
+.fa-utensils {
+  padding-right: 10px;
+  margin-top: 12px;
+}
+
+.fa-hands-helping {
+  padding-right: 4px;
+}
+
 .search-rest__location {
   text-align: center;
   padding: 15px 35px 15px 0;
@@ -136,12 +203,35 @@ h1 {
   margin-top: 38px;
 }
 
-.restaurant__container {
-  display: grid;
-  margin: 20px 0 24px 0;
-  grid-template-columns: 1fr;
-  grid-template-rows: 4fr;
-  gap: 18px;
+.card {
+  border-radius: 20px;
+  position: relative;
+}
+
+.card img {
+  border-radius: 20px 20px 0 0;
+  height: 176px;
+  width: max-content;
+}
+
+.card__new-sticker {
+  background-color: #99e2d0;
+  color: #008766;
+  width: 80px;
+  height: 30px;
+  text-align: center;
+  padding: 0.5rem;
+  border-radius: 2px;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+}
+
+.card__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
 }
 
 /*# sourceMappingURL=style.css.map */

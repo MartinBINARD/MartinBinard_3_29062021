@@ -3,7 +3,7 @@
 
 ***A cool french menu reservation website called Ohmyfood***
 
-**Commit #5**
+**Commit #6**
 
 # Description
 
@@ -19,4 +19,6 @@
 
 # Change done
 
-* Add css grid to restaurant selection and img of palette du gout
+* Add max width to restaurant cards img
+* Add Footer
+* Add _grid.scss & _responsive.scss

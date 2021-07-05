@@ -1,0 +1,9 @@
+// INDEX
+
+.restaurant__container {
+    display: grid;
+    margin: 20px 0 24px 0;
+    grid-template-columns: 100%;
+    grid-template-rows: 4fr;
+    gap: 18px;
+}

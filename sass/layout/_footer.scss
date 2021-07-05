@@ -1,0 +1,36 @@
+// THEME FOOTER
+footer, footer a {
+    background-color: $color-background-footer;
+    color: $color-footer;
+}
+
+// FOOTER
+footer {
+    padding: 25px;
+}
+
+footer li {
+    margin: 0.63rem 0;
+}
+
+footer a:hover {
+    color: $color-primary;
+}
+
+// LINE UP LOGO LINK WITH ITS
+footer i {
+    display: inline;
+}
+
+footer p {
+    display: inline-block;
+}
+
+.fa-utensils {
+    padding-right: 10px;
+    margin-top: 12px;
+}
+
+.fa-hands-helping {
+    padding-right: 4px;
+}

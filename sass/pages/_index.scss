@@ -33,7 +33,7 @@
     @include button;
 }
 
-// RESTAURANT SELECTION
+// RESTAURANT CONTAINER & TITLE
 .restaurant {
     background-color: $color-background-explore;
     padding: 20px;
@@ -43,10 +43,37 @@
     margin-top: 38px;
 }
 
-.restaurant__container {
-    display: grid;
-    margin: 20px 0 24px 0;
-    grid-template-columns: 1fr;
-    grid-template-rows: 4fr;
-    gap: 18px;
+    // RESTAURANT CARD CHOICE
+.card {
+    @extend %shadow-header;
+    border-radius: 20px;
+    position: relative;
+}
+
+.card img {
+    border-radius: 20px 20px 0 0;
+    height: 176px;
+    width: max-content;
+}
+
+// NEW STICKER ON RESTAURANT CARDS
+.card__new-sticker {
+    background-color: $color-background-sticker-new;
+    color: $color-sticker-new;
+    width: 80px;
+    height: 30px;
+    text-align: center;
+    padding: 0.5rem;
+    border-radius: 2px;
+    position: absolute;
+    right: 12px;
+    top: 12px;
+}
+
+// BOTTOM CARD
+.card__bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem;
 }

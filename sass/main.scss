@@ -1,15 +1,19 @@
 // UTILS
-@import "utils/_mixins.scss";
-@import "utils/_placeholders.scss";
-@import "utils/_variables.scss";
+@import "utils/mixins.scss";
+@import "utils/placeholders.scss";
+@import "utils/variables.scss";
 
 // BASE
-@import "base/_reset.scss";
-@import "base/_typography.scss";
+@import "base/reset.scss";
+@import "base/typography.scss";
 
 // LAYOUT
-@import "layout/_header.scss";
-@import "layout/_navbar.scss";
+@import "layout/media-size";
+@import "layout/responsive";
+@import "layout/grid.scss";
+@import "layout/header.scss";
+@import "layout/navbar.scss";
+@import "layout/footer.scss";
 
 // PAGES
-@import "pages/_index.scss";
+@import "pages/index.scss";
