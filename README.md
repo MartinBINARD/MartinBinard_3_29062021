@@ -3,7 +3,7 @@
 
 ***A cool french menu reservation website called Ohmyfood***
 
-**Commit #10**
+**Commit #11**
 
 # Description
 
@@ -19,11 +19,8 @@
 
 # Change done
 
-* Add responsive index.html
-* Add public/pages/palette-du-gout.html
-* Add _menu.scss, _heart-favorite.scss, _corner-check & _back-index.scss
-* Move media-size.scss to utils directory
-* Change order of mains.scss directories
+* Move palette-du-gout.html to root directory
+* Delete pages directory
 
 # WEBSITE LINK
 
