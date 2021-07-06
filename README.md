@@ -3,7 +3,7 @@
 
 ***A cool french menu reservation website called Ohmyfood***
 
-**Commit #11**
+**Commit #12**
 
 # Description
 
@@ -19,8 +19,7 @@
 
 # Change done
 
-* Move palette-du-gout.html to root directory
-* Delete pages directory
+* Rename palette link path inside index.html 
 
 # WEBSITE LINK
 
