@@ -1,7 +1,13 @@
+// SMALL LAPTOP
 // INDEX : RESPONSIVE RESTAURANT CARDS
-@media #{$laptop-up} {
-    .restaurant__container {
+@media #{$small-laptop-up} {
+    .navbar__container__list {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+    }
+    
+    .cards-list {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
     }
 }

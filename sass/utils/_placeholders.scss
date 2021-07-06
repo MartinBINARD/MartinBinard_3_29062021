@@ -7,3 +7,9 @@
 %shadow-nav {
     box-shadow: 1px 5px 8px rgb(0, 0, 0, 0.1);
 }
+
+// CONTENT MAX EXTEND
+%desktop-max-extend {
+    max-width: $medium-laptop;
+    margin: auto;
+}

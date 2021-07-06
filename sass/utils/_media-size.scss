@@ -1,0 +1,4 @@
+$small-laptop: 1024px!default;
+$medium-laptop: 1200px!default;
+
+$small-laptop-up: "screen and (min-width: #{$small-laptop})";

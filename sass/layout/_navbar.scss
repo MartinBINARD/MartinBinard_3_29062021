@@ -1,10 +1,13 @@
 .navbar {
-    padding: 50px 20px 68px;
+    padding: 50px 20px 48px;
+}
+
+.navbar__container {
+    @extend %desktop-max-extend;
 }
 
 .navbar__container__list {
-    margin-top: 27px;
-    border: solid black 1px;
+    margin-top: 7px;
 }
 
 .navbar__container__list__selector {
@@ -18,10 +21,7 @@
     border-radius: 20px;
     width: 96.5%;
     cursor: pointer;
-    @extend %shadow-nav
-}
-
-#select-menu {
+    @extend %shadow-nav;
     margin: 20px 0;
 }
 
@@ -30,6 +30,7 @@
     color: $color-icons-list;
     margin-left: 12px;
 }
+
 .selector__number {
     @include selector__number--style;
     position: absolute;

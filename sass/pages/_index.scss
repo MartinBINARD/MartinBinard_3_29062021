@@ -39,6 +39,10 @@
     padding: 20px;
 }
 
+.restaurant__container {
+    @extend %desktop-max-extend;
+}
+
 .restaurant h2 {
     margin-top: 38px;
 }

@@ -9,6 +9,10 @@ footer {
     padding: 25px;
 }
 
+.footer__container {
+    @extend %desktop-max-extend;
+}
+
 footer li {
     margin: 0.63rem 0;
 }

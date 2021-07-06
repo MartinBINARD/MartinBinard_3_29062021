@@ -1,19 +1,27 @@
-// UTILS
-@import "utils/mixins.scss";
-@import "utils/placeholders.scss";
-@import "utils/variables.scss";
-
 // BASE
 @import "base/reset.scss";
-@import "base/typography.scss";
+@import "base/typography";
+
+// UTILS
+@import "utils/media-size";
+@import "utils/variables";
+@import "utils/mixins";
+@import "utils/placeholders";
 
 // LAYOUT
-@import "layout/media-size";
+@import "layout/grid";
+@import "layout/header";
+@import "layout/navbar";
+@import "layout/menu";
+@import "layout/footer";
 @import "layout/responsive";
-@import "layout/grid.scss";
-@import "layout/header.scss";
-@import "layout/navbar.scss";
-@import "layout/footer.scss";
+
+// COMPONENTS
+@import "components/back-index";
+@import "components/heart-favorite";
+@import "components/underline-titles-menu";
+@import "components/corner-chekc";
 
 // PAGES
-@import "pages/index.scss";
+@import "pages/index";
+@import "pages/palette-du-gout";
