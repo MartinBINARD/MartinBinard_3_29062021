@@ -1,4 +1,10 @@
 header {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+}
+
+.title-page {
     padding: 8px;
     @extend %shadow-header;
     position: relative;
@@ -6,4 +12,15 @@ header {
 
 h1 {
     text-align: center;
+}
+
+header, .image-cover {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.img-background-card {
+    height: 256px;
+    width: 100%;
 }

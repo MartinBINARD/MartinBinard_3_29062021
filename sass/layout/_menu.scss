@@ -1,16 +1,15 @@
-// .menu {
-//     position: relative;
-// }
+.menu {
+    background-color: $color-fonts-clear;
+}
 
 // MENU CONTAINER
 .menu__container{
-    background-color: $color-background-explore;
     border-radius: 30px 30px 0 0;
-    padding: 37px 12px;
-    // position: absolute;
-    top: 210px;
+    padding: 35px 12px 58px;
+    position: relative;
+    margin-top: -50px;
     @extend %desktop-max-extend;
-    // width: 100%;
+    background-color: $color-background-explore;
 }
 
 // MENU HEADER
@@ -18,5 +17,27 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 26px 36px 7px;
+    margin: 0 26px 0 7px;
+}
+
+// MENU BLOCK
+.menu-block {
+    margin: 35px 0 50px;
+}
+
+.menu-block__list li {
+    background-color: $color-fonts-clear;
+    border-radius: 15px;
+    padding: 15px 23px 12px 11px;
+    margin: 14px 0;
+    text-overflow: "...";
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.menu-block__list__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7px;
 }

@@ -3,7 +3,7 @@
 
 ***A cool french menu reservation website called Ohmyfood***
 
-**Commit #12**
+**Commit #13**
 
 # Description
 
@@ -19,7 +19,9 @@
 
 # Change done
 
-* Rename palette link path inside index.html 
+* Add menu-block
+* Add order buttons
+* Move backgrounds images to headers
 
 # WEBSITE LINK
 

@@ -1,15 +1,14 @@
 @mixin button {
-    color: $color-fonts-button;
+    color: $color-fonts-clear;
     font-size: 17px;
     border: inherit;
     border-radius: 500px;
     background: linear-gradient(to top, $color-primary , $color-secondary);
-    padding: 1rem 1.2rem;
     cursor: pointer;
 }
 
 @mixin selector__number--style {
-    color: $color-fonts-button;
+    color: $color-fonts-clear;
     background-color: $color-primary;
     border-radius: 500px;
     height: 25px;

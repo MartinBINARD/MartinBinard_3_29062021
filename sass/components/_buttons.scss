@@ -1,0 +1,16 @@
+// SEARCH BUTTON
+.search-rest__explore__button {
+    @include button;
+    padding: 1rem 1.2rem;
+}
+
+// ORDER BUTTON
+.order {
+    display: flex;
+    justify-content: center;
+}
+
+.order__button {
+    @include button;
+    padding: 1.12rem 2.5rem;
+}
