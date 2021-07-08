@@ -3,7 +3,7 @@
 
 ***A cool french menu reservation website called Ohmyfood***
 
-**Commit #13**
+**Commit #14**
 
 # Description
 
@@ -19,9 +19,8 @@
 
 # Change done
 
-* Add menu-block
-* Add order buttons
-* Move backgrounds images to headers
+* Add restaurant card links
+* Fix position relative to header
 
 # WEBSITE LINK
 
