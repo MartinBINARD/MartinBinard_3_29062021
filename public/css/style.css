@@ -59,6 +59,16 @@ p, .new-sticker {
   margin: auto;
 }
 
+@keyframes slow-appearence {
+  from {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .cards-list {
   display: grid;
   margin: 20px 0 24px 0;
@@ -162,6 +172,40 @@ header, .image-cover, .img-background-card {
   text-overflow: "...";
   overflow: hidden;
   white-space: nowrap;
+}
+
+.tab {
+  animation: slow-appearence 1s;
+}
+.tab--1 {
+  animation-delay: 0.1428571429s;
+}
+.tab--2 {
+  animation-delay: 0.2857142857s;
+}
+.tab--3 {
+  animation-delay: 0.4285714286s;
+}
+.tab--4 {
+  animation-delay: 0.5714285714s;
+}
+.tab--5 {
+  animation-delay: 0.7142857143s;
+}
+.tab--6 {
+  animation-delay: 0.8571428571s;
+}
+.tab--7 {
+  animation-delay: 1s;
+}
+.tab--8 {
+  animation-delay: 1.1428571429s;
+}
+.tab--9 {
+  animation-delay: 1.2857142857s;
+}
+.tab--10 {
+  animation-delay: 1.4285714286s;
 }
 
 .menu-block__list__description {

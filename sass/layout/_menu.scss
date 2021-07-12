@@ -33,6 +33,16 @@
     text-overflow: "...";
     overflow: hidden;
     white-space: nowrap;
+    // animation: slow-appearence $anim-dur;
+}
+
+.tab {
+    animation: slow-appearence $anim-dur;
+    @for $i from 1 through 10 {
+        &--#{$i} {
+            animation-delay: $anim-delay * $i;
+        }
+    }
 }
 
 .menu-block__list__description {
