@@ -21,7 +21,7 @@
     border-radius: 20px;
     width: 96.5%;
     cursor: pointer;
-    @extend %shadow-nav;
+    @extend %shadow-element;
     margin: 20px 0;
 }
 

@@ -50,8 +50,11 @@ p, .new-sticker {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
-.navbar__container__list__selector {
+.order__button, .search-rest__explore__button, .navbar__container__list__selector, .tab {
   box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.1);
+}
+.order__button:hover, .search-rest__explore__button:hover, .navbar__container__list__selector:hover, .tab:hover {
+  box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.4);
 }
 
 .restaurant__container, .footer__container, .menu__container, .navbar__container {
@@ -59,14 +62,100 @@ p, .new-sticker {
   margin: auto;
 }
 
+.tab {
+  animation: slow-appearence 1s both;
+}
+.tab--1 {
+  animation-delay: 0.2s;
+}
+.tab--2 {
+  animation-delay: 0.4s;
+}
+.tab--3 {
+  animation-delay: 0.6s;
+}
+.tab--4 {
+  animation-delay: 0.8s;
+}
+.tab--5 {
+  animation-delay: 1s;
+}
+.tab--6 {
+  animation-delay: 1.2s;
+}
+.tab--7 {
+  animation-delay: 1.4s;
+}
+.tab--8 {
+  animation-delay: 1.6s;
+}
+.tab--9 {
+  animation-delay: 1.8s;
+}
+.tab--10 {
+  animation-delay: 2s;
+}
+
 @keyframes slow-appearence {
   from {
+    opacity: 0;
     transform: translateY(1rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes slide-left {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-60px);
+  }
+}
+@keyframes slide-right {
+  from {
+    transform: translateX(-60px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@keyframes slide-left-growth {
+  from {
+    transform: translateX(0) scaleX(0);
     opacity: 0;
   }
   to {
-    transform: translateY(0);
+    transform: translateX(-60px) scaleX(1);
     opacity: 1;
+  }
+}
+@keyframes slide-right-growth {
+  from {
+    transform: translateX(-60px) scaleX(1);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(0) scaleX(0);
+    opacity: 0;
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(180deg);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+@keyframes rotate-back {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(180deg);
   }
 }
 .cards-list {
@@ -169,49 +258,26 @@ header, .image-cover, .img-background-card {
   border-radius: 15px;
   padding: 15px 23px 12px 11px;
   margin: 14px 0;
-  text-overflow: "...";
+  cursor: pointer;
+  position: relative;
   overflow: hidden;
-  white-space: nowrap;
-}
-
-.tab {
-  animation: slow-appearence 1s;
-}
-.tab--1 {
-  animation-delay: 0.1428571429s;
-}
-.tab--2 {
-  animation-delay: 0.2857142857s;
-}
-.tab--3 {
-  animation-delay: 0.4285714286s;
-}
-.tab--4 {
-  animation-delay: 0.5714285714s;
-}
-.tab--5 {
-  animation-delay: 0.7142857143s;
-}
-.tab--6 {
-  animation-delay: 0.8571428571s;
-}
-.tab--7 {
-  animation-delay: 1s;
-}
-.tab--8 {
-  animation-delay: 1.1428571429s;
-}
-.tab--9 {
-  animation-delay: 1.2857142857s;
-}
-.tab--10 {
-  animation-delay: 1.4285714286s;
 }
 
 .menu-block__list__description {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+}
+
+.description__header {
+  flex-grow: 1;
+}
+
+.description__header, .description__header h3, .description__header p {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.description__header p {
   margin-top: 7px;
 }
 
@@ -289,7 +355,42 @@ footer p {
 }
 
 .corner-check {
-  display: none;
+  display: flex;
+  position: absolute;
+  right: -60px;
+  width: 60px;
+  top: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  border-radius: 0 15px 15px 0;
+  background-color: #99E2D0;
+  color: #ffffff;
+  animation: slide-right-growth 500ms both;
+}
+
+.fa-check-circle {
+  font-size: 20px;
+  transform: rotate(180deg);
+  animation: rotate-back 500ms both;
+}
+
+.menu-block-price {
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  animation: slide-right 500ms both;
+}
+
+.menu-block__list li:hover .corner-check {
+  animation: slide-left-growth 500ms both;
+}
+.menu-block__list li:hover .fa-check-circle {
+  animation: rotate 500ms 100ms both;
+}
+.menu-block__list li:hover .menu-block-price {
+  animation: slide-left 500ms both;
 }
 
 .search-rest__explore__button {
@@ -300,6 +401,9 @@ footer p {
   background: linear-gradient(to top, #9356DC, #FF79DA);
   cursor: pointer;
   padding: 1rem 1.2rem;
+}
+.search-rest__explore__button:hover {
+  background: linear-gradient(to top, #a16be0, #ff93e1);
 }
 
 .order {
@@ -315,6 +419,9 @@ footer p {
   background: linear-gradient(to top, #9356DC, #FF79DA);
   cursor: pointer;
   padding: 1.12rem 2.5rem;
+}
+.order__button:hover {
+  background: linear-gradient(to top, #a16be0, #ff93e1);
 }
 
 .search-rest__location {

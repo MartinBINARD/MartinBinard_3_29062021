@@ -3,9 +3,12 @@
     box-shadow: 0 0 5px rgb(0, 0, 0, 0.4);
 }
 
-// BOX-SHADOW NAV
-%shadow-nav {
+// BOX-SHADOW NAV, MENU-LIST & BUTTON
+%shadow-element {
     box-shadow: 1px 5px 8px rgb(0, 0, 0, 0.1);
+    &:hover {
+        box-shadow: 1px 5px 8px rgb(0, 0, 0, 0.4);
+    }
 }
 
 // CONTENT MAX EXTEND

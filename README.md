@@ -3,7 +3,7 @@
 
 ***A cool french menu reservation website called Ohmyfood***
 
-**Commit #15**
+**Commit #16**
 
 # Description
 
@@ -19,7 +19,13 @@
 
 # Change done
 
-* Add slow-motion appearence menu list
+* Add corner-check price slide left animation on hover & slide back on mouse out after hover
+* Add both property on slow-motion appearence menu list animation
+* Add button hover boxshadow & background-color
+
+# TO DO
+
+* Add opcaticy on hover buttons
 
 # WEBSITE LINK
 

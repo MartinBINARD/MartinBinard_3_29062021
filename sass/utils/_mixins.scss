@@ -5,6 +5,10 @@
     border-radius: 500px;
     background: linear-gradient(to top, $color-primary , $color-secondary);
     cursor: pointer;
+    @extend %shadow-element;
+    &:hover {
+        background: linear-gradient(to top, lighten($color-primary, 5%) , lighten($color-secondary, 5%));
+    }
 }
 
 @mixin selector__number--style {

@@ -30,24 +30,25 @@
     border-radius: 15px;
     padding: 15px 23px 12px 11px;
     margin: 14px 0;
-    text-overflow: "...";
+    cursor: pointer;
+    position: relative;
     overflow: hidden;
-    white-space: nowrap;
-    // animation: slow-appearence $anim-dur;
-}
-
-.tab {
-    animation: slow-appearence $anim-dur;
-    @for $i from 1 through 10 {
-        &--#{$i} {
-            animation-delay: $anim-delay * $i;
-        }
-    }
 }
 
 .menu-block__list__description {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+}
+
+.description__header {
+    flex-grow: 1;
+}
+
+.description__header, .description__header h3, .description__header p {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.description__header p {
     margin-top: 7px;
 }
