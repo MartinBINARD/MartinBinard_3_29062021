@@ -1,3 +1,13 @@
+// LOAD SPINNER
+@keyframes load-spinner {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 // MENU LIST KEYFRAMES
 @keyframes slow-appearence {
     from {

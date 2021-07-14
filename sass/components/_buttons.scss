@@ -8,9 +8,8 @@
 .order {
     display: flex;
     justify-content: center;
-}
-
-.order__button {
-    @include button;
-    padding: 1.12rem 2.5rem;
+    &__button {
+        @include button;
+        padding: 1.12rem 2.5rem;
+    }
 }

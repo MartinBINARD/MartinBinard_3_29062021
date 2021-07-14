@@ -18,7 +18,7 @@ img {
   object-fit: cover;
 }
 
-h1, h4, .menu-title {
+h1, h4, .menu-title, .loader__title {
   font-family: "Shrikhand", cursive;
 }
 
@@ -96,6 +96,14 @@ p, .new-sticker {
   animation-delay: 2s;
 }
 
+@keyframes load-spinner {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 @keyframes slow-appearence {
   from {
     opacity: 0;
@@ -193,11 +201,9 @@ header, .image-cover, .img-background-card {
 .navbar {
   padding: 50px 20px 48px;
 }
-
 .navbar__container__list {
   margin-top: 7px;
 }
-
 .navbar__container__list__selector {
   display: flex;
   flex-direction: row;
@@ -233,7 +239,6 @@ header, .image-cover, .img-background-card {
 .menu {
   background-color: #ffffff;
 }
-
 .menu__container {
   border-radius: 30px 30px 0 0;
   padding: 35px 12px 58px;
@@ -241,7 +246,6 @@ header, .image-cover, .img-background-card {
   margin-top: -50px;
   background-color: #f6f6f6;
 }
-
 .menu__container__header {
   display: flex;
   justify-content: space-between;
@@ -252,7 +256,6 @@ header, .image-cover, .img-background-card {
 .menu-block {
   margin: 35px 0 50px;
 }
-
 .menu-block__list li {
   background-color: #ffffff;
   border-radius: 15px;
@@ -262,7 +265,6 @@ header, .image-cover, .img-background-card {
   position: relative;
   overflow: hidden;
 }
-
 .menu-block__list__description {
   display: flex;
 }
@@ -332,6 +334,83 @@ footer p {
     gap: 1rem;
   }
 }
+.loader {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffffc7;
+  z-index: 1000;
+}
+
+.loader__title {
+  position: absolute;
+  top: 48%;
+  bottom: 52%;
+  left: 0;
+  right: 0;
+  z-index: 1002;
+}
+
+.circle {
+  position: relative;
+  background: conic-gradient(#9356DC, #99E2D0, #FF79DA, #9356DC);
+  height: 210px;
+  width: 210px;
+  border-radius: 50%;
+  z-index: 1001;
+  animation: load-spinner 1s linear infinite;
+}
+.circle::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  bottom: 10px;
+  left: 10px;
+  right: 10px;
+  background-color: #9356DC;
+  border-radius: 50%;
+}
+.circle .blur {
+  position: absolute;
+  background: conic-gradient(#9356DC, #99E2D0, #FF79DA, #9356DC);
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+.circle .blur--1 {
+  filter: blur(1px);
+}
+.circle .blur--2 {
+  filter: blur(2px);
+}
+.circle .blur--3 {
+  filter: blur(3px);
+}
+.circle .blur--4 {
+  filter: blur(4px);
+}
+.circle .blur--5 {
+  filter: blur(5px);
+}
+.circle .blur--6 {
+  filter: blur(6px);
+}
+.circle .blur--7 {
+  filter: blur(7px);
+}
+.circle .blur--8 {
+  filter: blur(8px);
+}
+.circle .blur--9 {
+  filter: blur(9px);
+}
+.circle .blur--10 {
+  filter: blur(10px);
+}
+
 .back-to-index {
   position: absolute;
   left: 22px;
@@ -400,17 +479,31 @@ footer p {
   border-radius: 500px;
   background: linear-gradient(to top, #9356DC, #FF79DA);
   cursor: pointer;
+  position: relative;
+  z-index: 1;
   padding: 1rem 1.2rem;
 }
-.search-rest__explore__button:hover {
+.search-rest__explore__button:hover::after {
+  opacity: 1;
+}
+.search-rest__explore__button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
   background: linear-gradient(to top, #a16be0, #ff93e1);
+  border-radius: 500px;
+  transition: opacity 250ms;
 }
 
 .order {
   display: flex;
   justify-content: center;
 }
-
 .order__button {
   color: #ffffff;
   font-size: 17px;
@@ -418,10 +511,25 @@ footer p {
   border-radius: 500px;
   background: linear-gradient(to top, #9356DC, #FF79DA);
   cursor: pointer;
+  position: relative;
+  z-index: 1;
   padding: 1.12rem 2.5rem;
 }
-.order__button:hover {
+.order__button:hover::after {
+  opacity: 1;
+}
+.order__button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  z-index: -1;
   background: linear-gradient(to top, #a16be0, #ff93e1);
+  border-radius: 500px;
+  transition: opacity 250ms;
 }
 
 .search-rest__location {

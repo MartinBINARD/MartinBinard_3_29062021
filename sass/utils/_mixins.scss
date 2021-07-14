@@ -6,8 +6,25 @@
     background: linear-gradient(to top, $color-primary , $color-secondary);
     cursor: pointer;
     @extend %shadow-element;
+    position: relative;
+    z-index: 1;
     &:hover {
+        &::after {
+            opacity: 1;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        opacity: 0;
+        z-index: -1;
         background: linear-gradient(to top, lighten($color-primary, 5%) , lighten($color-secondary, 5%));
+        border-radius: 500px;
+        transition: opacity 250ms;
     }
 }
 

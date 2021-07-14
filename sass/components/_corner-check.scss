@@ -13,7 +13,7 @@ $corner-anim-dur: 500ms!default;
     border-radius: 0 15px 15px 0;
     background-color: $color-tertiary;
     color: $color-fonts-clear;
-    animation: slide-right-growth $corner-anim-dur both
+    animation: slide-right-growth $corner-anim-dur both;
 }
 
 .fa-check-circle {

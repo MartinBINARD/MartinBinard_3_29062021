@@ -1,0 +1,54 @@
+$inner-diameter-width: 10px!default;
+$outter-diameter-width: 210px!default;
+
+.loader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-background-loader;
+    z-index: 1000;
+}
+
+.loader__title {
+    position: absolute;
+    top: 48%;
+    bottom: 52%;
+    left: 0;
+    right: 0;
+    z-index: 1002;
+}
+
+.circle {
+    position: relative;
+    background: conic-gradient($color-primary, $color-tertiary, $color-secondary, $color-primary);
+    height: $outter-diameter-width;
+    width: $outter-diameter-width;
+    border-radius: 50%;
+    z-index: 1001;
+    animation: load-spinner 1s linear infinite;
+    &::after {
+        content: '';
+        position: absolute;
+        top: $inner-diameter-width;
+        bottom: $inner-diameter-width;
+        left: $inner-diameter-width;
+        right: $inner-diameter-width;
+        background-color: $color-primary;
+        border-radius: 50%;
+     }
+    .blur {
+        position: absolute;
+        background: conic-gradient($color-primary, $color-tertiary, $color-secondary, $color-primary);
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        @for $i from 1 through 10 {
+            &--#{$i} {
+                filter: blur(1px * $i);
+            }
+        }
+    }
+}
