@@ -8,8 +8,9 @@ $outter-diameter-width: 210px!default;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $color-background-loader;
+    background: $color-background-loader;
     z-index: 1000;
+    animation: loader 3s ease-in-out both;
 }
 
 .loader__title {

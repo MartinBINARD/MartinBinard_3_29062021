@@ -3,7 +3,7 @@
 
 ***A cool french menu reservation website called Ohmyfood***
 
-**Commit #17**
+**Commit #18**
 
 # Description
 
@@ -19,8 +19,7 @@
 
 # Change done
 
-* Add an endless cool spinning loader
-* Add opcaticy on hover mixin button
+* Add cool gradient background to loader
 
 # WEBSITE LINK
 

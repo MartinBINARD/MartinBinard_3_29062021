@@ -96,6 +96,16 @@ p, .new-sticker {
   animation-delay: 2s;
 }
 
+@keyframes loader {
+  from {
+    opacity: 0.95;
+    visibility: visible;
+  }
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
 @keyframes load-spinner {
   from {
     transform: rotate(0deg);
@@ -128,26 +138,6 @@ p, .new-sticker {
   }
   to {
     transform: translateX(0);
-  }
-}
-@keyframes slide-left-growth {
-  from {
-    transform: translateX(0) scaleX(0);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(-60px) scaleX(1);
-    opacity: 1;
-  }
-}
-@keyframes slide-right-growth {
-  from {
-    transform: translateX(-60px) scaleX(1);
-    opacity: 1;
-  }
-  to {
-    transform: translateX(0) scaleX(0);
-    opacity: 0;
   }
 }
 @keyframes rotate {
@@ -341,8 +331,9 @@ footer p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ffffffc7;
+  background: linear-gradient(145deg, #FF79DA, #99E2D0);
   z-index: 1000;
+  animation: loader 3s ease-in-out both;
 }
 
 .loader__title {
@@ -445,7 +436,7 @@ footer p {
   border-radius: 0 15px 15px 0;
   background-color: #99E2D0;
   color: #ffffff;
-  animation: slide-right-growth 500ms both;
+  animation: slide-right 500ms both;
 }
 
 .fa-check-circle {
@@ -462,14 +453,11 @@ footer p {
   animation: slide-right 500ms both;
 }
 
-.menu-block__list li:hover .corner-check {
-  animation: slide-left-growth 500ms both;
+.menu-block__list li:hover .corner-check, .menu-block__list li:hover .menu-block-price {
+  animation: slide-left 500ms both;
 }
 .menu-block__list li:hover .fa-check-circle {
   animation: rotate 500ms 100ms both;
-}
-.menu-block__list li:hover .menu-block-price {
-  animation: slide-left 500ms both;
 }
 
 .search-rest__explore__button {

@@ -13,7 +13,7 @@ $corner-anim-dur: 500ms!default;
     border-radius: 0 15px 15px 0;
     background-color: $color-tertiary;
     color: $color-fonts-clear;
-    animation: slide-right-growth $corner-anim-dur both;
+    animation: slide-right $corner-anim-dur both;
 }
 
 .fa-check-circle {
@@ -33,14 +33,11 @@ $corner-anim-dur: 500ms!default;
 // ANIMATION CORNER CHECK PRICE 
 .menu-block__list li {
     &:hover {
-        .corner-check {
-            animation: slide-left-growth $corner-anim-dur both;
+        .corner-check, .menu-block-price {
+            animation: slide-left $corner-anim-dur both;
         }
         .fa-check-circle {
             animation: rotate $corner-anim-dur 100ms both;
-        }
-        .menu-block-price {
-            animation: slide-left $corner-anim-dur both;
         }
     }
 }

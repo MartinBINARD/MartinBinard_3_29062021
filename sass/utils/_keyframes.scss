@@ -1,3 +1,15 @@
+// LOADER
+@keyframes loader {
+    from {
+        opacity: 0.95;
+        visibility: visible;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
 // LOAD SPINNER
 @keyframes load-spinner {
     from {
@@ -20,7 +32,7 @@
     }
 }
 
-// PRICE BLOCK SLIDING
+// PRICE BLOCK SLIDING & CORNER CHECK MENU LIST
 @keyframes slide-left {
     from {
         transform: translateX(0);
@@ -36,29 +48,6 @@
     }
     to {
         transform: translateX(0);
-    }
-}
-
-//  CORNER CHECK MENU LIST
-@keyframes slide-left-growth {
-    from {
-        transform: translateX(0) scaleX(0);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(-60px) scaleX(1);
-        opacity: 1;
-    }
-}
-
-@keyframes slide-right-growth {
-    from {
-        transform: translateX(-60px) scaleX(1);
-        opacity: 1;
-    }
-    to {
-        transform: translateX(0) scaleX(0);
-        opacity: 0;
     }
 }
 
