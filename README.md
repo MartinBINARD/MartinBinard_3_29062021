@@ -3,7 +3,7 @@
 
 ***A cool french menu reservation website called Ohmyfood***
 
-**Commit #18**
+**Commit #19**
 
 # Description
 
@@ -19,7 +19,7 @@
 
 # Change done
 
-* Add cool gradient background to loader
+* Add margin slide animation to price menu while checkbox sliding to prevent price overlapping description menu
 
 # WEBSITE LINK
 

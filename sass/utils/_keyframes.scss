@@ -69,3 +69,31 @@
         transform: rotate(180deg);
     }
 }
+// PRICE MARGIN-SLIDE
+@keyframes margin-right {
+    from {
+        margin-right: 0;
+    }
+    to {
+        margin-right: 45px;
+    }
+}
+
+@keyframes margin-left {
+    from {
+        margin-right: 45px;
+    }
+    to {
+        margin-right: 0;
+    }
+}
+
+// HEART
+@keyframes heart-filling {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

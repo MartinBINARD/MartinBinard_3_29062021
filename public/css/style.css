@@ -156,6 +156,30 @@ p, .new-sticker {
     transform: rotate(180deg);
   }
 }
+@keyframes margin-right {
+  from {
+    margin-right: 0;
+  }
+  to {
+    margin-right: 45px;
+  }
+}
+@keyframes margin-left {
+  from {
+    margin-right: 45px;
+  }
+  to {
+    margin-right: 0;
+  }
+}
+@keyframes heart-filling {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .cards-list {
   display: grid;
   margin: 20px 0 24px 0;
@@ -413,10 +437,6 @@ footer p {
   color: #353535;
 }
 
-.fa-heart {
-  font-size: 21px;
-}
-
 .underline-titles-menu {
   background-color: #99E2D0;
   height: 3px;
@@ -450,11 +470,14 @@ footer p {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  animation: slide-right 500ms both;
+  animation: margin-left 500ms both;
 }
 
-.menu-block__list li:hover .corner-check, .menu-block__list li:hover .menu-block-price {
+.menu-block__list li:hover .corner-check {
   animation: slide-left 500ms both;
+}
+.menu-block__list li:hover .menu-block-price {
+  animation: margin-right 500ms both;
 }
 .menu-block__list li:hover .fa-check-circle {
   animation: rotate 500ms 100ms both;

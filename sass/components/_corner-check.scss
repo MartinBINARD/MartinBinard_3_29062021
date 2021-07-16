@@ -27,14 +27,17 @@ $corner-anim-dur: 500ms!default;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    animation: slide-right $corner-anim-dur both;
+    animation: margin-left $corner-anim-dur both;
 }
 
 // ANIMATION CORNER CHECK PRICE 
 .menu-block__list li {
     &:hover {
-        .corner-check, .menu-block-price {
+        .corner-check {
             animation: slide-left $corner-anim-dur both;
+        }
+        .menu-block-price {
+            animation: margin-right $corner-anim-dur both;
         }
         .fa-check-circle {
             animation: rotate $corner-anim-dur 100ms both;
