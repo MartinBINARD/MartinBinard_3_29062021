@@ -3,7 +3,7 @@
 
 ***A cool french menu reservation website called Ohmyfood***
 
-**Commit #19**
+**Commit #20**
 
 # Description
 
@@ -19,7 +19,10 @@
 
 # Change done
 
-* Add margin slide animation to price menu while checkbox sliding to prevent price overlapping description menu
+* Add heart favorite filling hover
+* Add corner-width variable into margin slide animation to price
+* Move all variables to _varaibles.scss
+* Renamed _animations.scss into _menu-list-animation.scss & move to components directory
 
 # WEBSITE LINK
 

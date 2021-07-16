@@ -75,13 +75,13 @@
         margin-right: 0;
     }
     to {
-        margin-right: 45px;
+        margin-right: $corner-width;
     }
 }
 
 @keyframes margin-left {
     from {
-        margin-right: 45px;
+        margin-right: $corner-width;
     }
     to {
         margin-right: 0;

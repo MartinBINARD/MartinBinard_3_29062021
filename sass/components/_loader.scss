@@ -1,6 +1,3 @@
-$inner-diameter-width: 10px!default;
-$outter-diameter-width: 210px!default;
-
 .loader {
     height: 100%;
     width: 100%;
@@ -11,15 +8,15 @@ $outter-diameter-width: 210px!default;
     background: $color-background-loader;
     z-index: 1000;
     animation: loader 3s ease-in-out both;
-}
-
-.loader__title {
-    position: absolute;
-    top: 48%;
-    bottom: 52%;
-    left: 0;
-    right: 0;
-    z-index: 1002;
+    
+    &__title {
+        position: absolute;
+        top: 48%;
+        bottom: 52%;
+        left: 0;
+        right: 0;
+        z-index: 1002;
+    }
 }
 
 .circle {
@@ -30,6 +27,7 @@ $outter-diameter-width: 210px!default;
     border-radius: 50%;
     z-index: 1001;
     animation: load-spinner 1s linear infinite;
+    
     &::after {
         content: '';
         position: absolute;
@@ -40,6 +38,7 @@ $outter-diameter-width: 210px!default;
         background-color: $color-primary;
         border-radius: 50%;
      }
+     
     .blur {
         position: absolute;
         background: conic-gradient($color-primary, $color-tertiary, $color-secondary, $color-primary);

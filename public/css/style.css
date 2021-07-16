@@ -50,50 +50,16 @@ p, .new-sticker {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
 
-.order__button, .search-rest__explore__button, .navbar__container__list__selector, .tab {
+.tab, .order__button, .search-rest__explore__button, .navbar__container__list__selector {
   box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.1);
 }
-.order__button:hover, .search-rest__explore__button:hover, .navbar__container__list__selector:hover, .tab:hover {
+.tab:hover, .order__button:hover, .search-rest__explore__button:hover, .navbar__container__list__selector:hover {
   box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.4);
 }
 
 .restaurant__container, .footer__container, .menu__container, .navbar__container {
   max-width: 1200px;
   margin: auto;
-}
-
-.tab {
-  animation: slow-appearence 1s both;
-}
-.tab--1 {
-  animation-delay: 0.2s;
-}
-.tab--2 {
-  animation-delay: 0.4s;
-}
-.tab--3 {
-  animation-delay: 0.6s;
-}
-.tab--4 {
-  animation-delay: 0.8s;
-}
-.tab--5 {
-  animation-delay: 1s;
-}
-.tab--6 {
-  animation-delay: 1.2s;
-}
-.tab--7 {
-  animation-delay: 1.4s;
-}
-.tab--8 {
-  animation-delay: 1.6s;
-}
-.tab--9 {
-  animation-delay: 1.8s;
-}
-.tab--10 {
-  animation-delay: 2s;
 }
 
 @keyframes loader {
@@ -161,12 +127,12 @@ p, .new-sticker {
     margin-right: 0;
   }
   to {
-    margin-right: 45px;
+    margin-right: 60px;
   }
 }
 @keyframes margin-left {
   from {
-    margin-right: 45px;
+    margin-right: 60px;
   }
   to {
     margin-right: 0;
@@ -359,7 +325,6 @@ footer p {
   z-index: 1000;
   animation: loader 3s ease-in-out both;
 }
-
 .loader__title {
   position: absolute;
   top: 48%;
@@ -435,6 +400,30 @@ footer p {
 .fa-arrow-left {
   font-size: 18px;
   color: #353535;
+}
+
+.heart {
+  position: relative;
+  margin-bottom: 20px;
+}
+.heart .fa-heart {
+  font-size: 22px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: white;
+}
+.heart .fa-gradient {
+  background: white;
+}
+.heart .fa-gradient:hover {
+  cursor: pointer;
+  animation: heart-filling 500ms;
+  background: linear-gradient(#9356DC, #FF79DA);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  font-weight: bold;
 }
 
 .underline-titles-menu {
@@ -541,6 +530,40 @@ footer p {
   background: linear-gradient(to top, #a16be0, #ff93e1);
   border-radius: 500px;
   transition: opacity 250ms;
+}
+
+.tab {
+  animation: slow-appearence 1s both;
+}
+.tab--1 {
+  animation-delay: 0.2s;
+}
+.tab--2 {
+  animation-delay: 0.4s;
+}
+.tab--3 {
+  animation-delay: 0.6s;
+}
+.tab--4 {
+  animation-delay: 0.8s;
+}
+.tab--5 {
+  animation-delay: 1s;
+}
+.tab--6 {
+  animation-delay: 1.2s;
+}
+.tab--7 {
+  animation-delay: 1.4s;
+}
+.tab--8 {
+  animation-delay: 1.6s;
+}
+.tab--9 {
+  animation-delay: 1.8s;
+}
+.tab--10 {
+  animation-delay: 2s;
 }
 
 .search-rest__location {

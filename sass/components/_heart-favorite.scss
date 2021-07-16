@@ -1,0 +1,23 @@
+.heart {
+    position: relative;
+    margin-bottom: 20px;
+    .fa-heart {
+        font-size: 22px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: white;
+    }
+    .fa-gradient {
+        background: white;
+        &:hover {
+            cursor: pointer;
+            animation: heart-filling 500ms;
+            background: linear-gradient( $color-primary, $color-secondary);
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            font-weight: bold;
+        }
+    }
+}
