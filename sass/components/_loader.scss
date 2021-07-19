@@ -21,7 +21,7 @@
 
 .circle {
     position: relative;
-    background: conic-gradient($color-primary, $color-tertiary, $color-secondary, $color-primary);
+    background: linear-gradient($color-primary, $color-tertiary, $color-secondary);
     height: $outter-diameter-width;
     width: $outter-diameter-width;
     border-radius: 50%;
@@ -38,10 +38,9 @@
         background-color: $color-primary;
         border-radius: 50%;
      }
-     
+
     .blur {
         position: absolute;
-        background: conic-gradient($color-primary, $color-tertiary, $color-secondary, $color-primary);
         height: 100%;
         width: 100%;
         border-radius: 50%;

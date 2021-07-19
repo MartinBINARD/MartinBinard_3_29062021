@@ -3,7 +3,7 @@
 
 ***A cool french menu reservation website called Ohmyfood***
 
-**Commit #20**
+**Commit #21**
 
 # Description
 
@@ -19,10 +19,8 @@
 
 # Change done
 
-* Add heart favorite filling hover
-* Add corner-width variable into margin slide animation to price
-* Move all variables to _varaibles.scss
-* Renamed _animations.scss into _menu-list-animation.scss & move to components directory
+* Add new heart-favorite filling animation with mix-blend-mode: lighten to ovoid W3C errors
+* Add linear background linear-gradient to page loader to ovoid W3C error
 
 # WEBSITE LINK
 

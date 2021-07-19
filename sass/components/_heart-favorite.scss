@@ -1,23 +1,49 @@
 .heart {
     position: relative;
-    margin-bottom: 20px;
-    .fa-heart {
-        font-size: 22px;
+    margin: 0 30px 30px 0;
+    background-color: inherit;
+    cursor: pointer;
+    &:hover::before {
+        opacity: 1;
+    }
+
+    &::before {
+        opacity: 0;
+        transition: 1s;
+        content: "";
         position: absolute;
         top: 0;
-        right: 0;
-        background: white;
+        left: 0;
+        height: 22px;
+        width: 22px;
+        background: linear-gradient(to bottom, $color-primary ,$color-secondary);
     }
-    .fa-gradient {
-        background: white;
-        &:hover {
-            cursor: pointer;
-            animation: heart-filling 500ms;
-            background: linear-gradient( $color-primary, $color-secondary);
-            background-clip: text;
-            -webkit-background-clip: text;
-            color: transparent;
-            font-weight: bold;
+
+    &:hover {
+        .fa-backward {
+            opacity: 1;
         }
+        .fa-foward {
+            opacity: 0;
+        }
+    }
+
+    .fa-heart {
+        position: absolute;
+        top: 0;
+        left: 0;
+        font-size: 22px;
+    }
+    
+    .fa-foward {
+        opacity: 1;
+        color: black;
+        transition: 0.5s ease-in-out;
+    }
+    .fa-backward {
+        opacity: 0;
+        animation: heart-filling 0.5s ease-in-out both;
+        background-color: white;
+        mix-blend-mode: lighten;
     }
 }

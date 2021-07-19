@@ -336,7 +336,7 @@ footer p {
 
 .circle {
   position: relative;
-  background: conic-gradient(#9356DC, #99E2D0, #FF79DA, #9356DC);
+  background: linear-gradient(#9356DC, #99E2D0, #FF79DA);
   height: 210px;
   width: 210px;
   border-radius: 50%;
@@ -355,7 +355,6 @@ footer p {
 }
 .circle .blur {
   position: absolute;
-  background: conic-gradient(#9356DC, #99E2D0, #FF79DA, #9356DC);
   height: 100%;
   width: 100%;
   border-radius: 50%;
@@ -404,26 +403,46 @@ footer p {
 
 .heart {
   position: relative;
-  margin-bottom: 20px;
+  margin: 0 30px 30px 0;
+  background-color: inherit;
+  cursor: pointer;
 }
-.heart .fa-heart {
-  font-size: 22px;
+.heart:hover::before {
+  opacity: 1;
+}
+.heart::before {
+  opacity: 0;
+  transition: 1s;
+  content: "";
   position: absolute;
   top: 0;
-  right: 0;
-  background: white;
+  left: 0;
+  height: 22px;
+  width: 22px;
+  background: linear-gradient(to bottom, #9356DC, #FF79DA);
 }
-.heart .fa-gradient {
-  background: white;
+.heart:hover .fa-backward {
+  opacity: 1;
 }
-.heart .fa-gradient:hover {
-  cursor: pointer;
-  animation: heart-filling 500ms;
-  background: linear-gradient(#9356DC, #FF79DA);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  font-weight: bold;
+.heart:hover .fa-foward {
+  opacity: 0;
+}
+.heart .fa-heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 22px;
+}
+.heart .fa-foward {
+  opacity: 1;
+  color: black;
+  transition: 0.5s ease-in-out;
+}
+.heart .fa-backward {
+  opacity: 0;
+  animation: heart-filling 0.5s ease-in-out both;
+  background-color: white;
+  mix-blend-mode: lighten;
 }
 
 .underline-titles-menu {
