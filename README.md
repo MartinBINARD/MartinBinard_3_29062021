@@ -3,9 +3,13 @@
 
 ***A cool french menu reservation website called Ohmyfood***
 
-**Commit #21**
+![logo-ohmyfood](./public/images/logo/ohmyfood.png)
+
+**Commit #22**
 
 # Description
+
+* This website is a project to web developer course teached by [Openclassroom](https://openclassrooms.com/en/paths/141-web-developer)
 
 * This website allow the customers in a hurry to book in multiple restaurants menus in advance
 
@@ -19,8 +23,7 @@
 
 # Change done
 
-* Add new heart-favorite filling animation with mix-blend-mode: lighten to ovoid W3C errors
-* Add linear background linear-gradient to page loader to ovoid W3C error
+* Add more description in README.md
 
 # WEBSITE LINK
 
