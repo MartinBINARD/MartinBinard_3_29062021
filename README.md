@@ -5,7 +5,7 @@
 
 ![logo-ohmyfood](./public/images/logo/ohmyfood.png)
 
-**Commit #23**
+**Commit #24**
 
 # Description
 
@@ -31,4 +31,4 @@
 
 # Screenshot
 
-![screenshot-ohmyfood](./Maquettes-Ohmyfood/maquettes/Animations/Accueil.png)
+![screenshot-ohmyfood](./Maquettes-Ohmyfood/maquettes/Accueil.png)
