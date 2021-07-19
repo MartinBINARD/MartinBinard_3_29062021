@@ -5,7 +5,7 @@
 
 ![logo-ohmyfood](./public/images/logo/ohmyfood.png)
 
-**Commit #22**
+**Commit #23**
 
 # Description
 
@@ -23,8 +23,12 @@
 
 # Change done
 
-* Add more description in README.md
+* Add screenshot
 
 # WEBSITE LINK
 
 [ohmyfood](https://martinbinard.github.io/MartinBinard_3_29062021/)
+
+# Screenshot
+
+![screenshot-ohmyfood](./Maquettes-Ohmyfood/maquettes/Animations/Accueil.png)
