@@ -243,6 +243,7 @@ header, .image-cover, .img-background-card {
 
 .menu-block {
   margin: 35px 0 50px;
+  overflow: hidden;
 }
 .menu-block__list li {
   background-color: #ffffff;
@@ -255,6 +256,7 @@ header, .image-cover, .img-background-card {
 }
 .menu-block__list__description {
   display: flex;
+  overflow: hidden;
 }
 
 .description__header {

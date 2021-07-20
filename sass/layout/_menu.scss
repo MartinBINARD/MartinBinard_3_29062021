@@ -23,6 +23,7 @@
 // MENU BLOCK
 .menu-block {
     margin: 35px 0 50px;
+    overflow: hidden;
     
     &__list li {
         background-color: $color-fonts-clear;
@@ -36,6 +37,7 @@
     
     &__list__description {
         display: flex;
+        overflow: hidden;
     }
 }
 

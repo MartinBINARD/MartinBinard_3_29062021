@@ -5,7 +5,7 @@
 
 ![logo-ohmyfood](./public/images/logo/ohmyfood.png)
 
-**Commit #25**
+**Commit #26**
 
 # Description
 
@@ -23,7 +23,7 @@
 
 # Change done
 
-* Add %shadow-card on hover
+* Add overflow: hidden to menu blocks to patch green chekcbox bugs over 1024px width. 
 
 # WEBSITE LINK
 
