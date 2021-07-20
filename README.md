@@ -5,7 +5,7 @@
 
 ![logo-ohmyfood](./public/images/logo/ohmyfood.png)
 
-**Commit #24**
+**Commit #25**
 
 # Description
 
@@ -23,7 +23,7 @@
 
 # Change done
 
-* Add screenshot
+* Add %shadow-card on hover
 
 # WEBSITE LINK
 

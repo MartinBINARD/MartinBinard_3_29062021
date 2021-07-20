@@ -44,7 +44,7 @@
 
     // RESTAURANT CARD CHOICE
 .card {
-    @extend %shadow-header;
+    @extend %shadow-card;
     border-radius: 20px;
     position: relative;
 }

@@ -1,6 +1,15 @@
-// HEADERS & RESTAURANT CARDS CHOICE SHADOWS
+// HEADERS
 %shadow-header {
     box-shadow: 0 0 5px rgb(0, 0, 0, 0.4);
+}
+
+// RESTAURANT CARDS CHOICE SHADOWS
+%shadow-card {
+    box-shadow: 0 0 2px rgb(0, 0, 0, 0.4);
+    transition: 300ms ease-in-out;
+    &:hover {
+        box-shadow: 0px 5px 7px 7px rgb(0, 0, 0, 0.4);
+    }
 }
 
 // BOX-SHADOW NAV, MENU-LIST & BUTTON

@@ -46,8 +46,16 @@ p, .new-sticker {
   font-size: 14px;
 }
 
-.card, .title-page {
+.title-page {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+
+.card {
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+  transition: 300ms ease-in-out;
+}
+.card:hover {
+  box-shadow: 0px 5px 7px 7px rgba(0, 0, 0, 0.4);
 }
 
 .tab, .order__button, .search-rest__explore__button, .navbar__container__list__selector {
