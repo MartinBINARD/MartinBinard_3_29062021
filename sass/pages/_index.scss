@@ -44,15 +44,15 @@
 
     // RESTAURANT CARD CHOICE
 .card {
-    @extend %shadow-card;
     border-radius: 20px;
     position: relative;
+    @extend %shadow-card;
 }
 
 .card img {
     border-radius: 20px 20px 0 0;
     height: 176px;
-    width: max-content;
+    width: 100%;
 }
 
 // NEW STICKER ON RESTAURANT CARDS

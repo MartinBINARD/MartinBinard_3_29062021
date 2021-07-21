@@ -5,7 +5,7 @@
 
 ![logo-ohmyfood](./public/images/logo/ohmyfood.png)
 
-**Commit #26**
+**Commit #27**
 
 # Description
 
@@ -23,7 +23,7 @@
 
 # Change done
 
-* Add overflow: hidden to menu blocks to patch green chekcbox bugs over 1024px width. 
+* Add 100% width to img card 
 
 # WEBSITE LINK
 
